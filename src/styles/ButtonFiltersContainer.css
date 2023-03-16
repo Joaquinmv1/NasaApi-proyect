@@ -1,4 +1,4 @@
-.galery-container{
+.galery-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -6,8 +6,8 @@
     gap: 20px;
 }
 
-.galery-items{
-    width: 25%;
+.galery-items {
+    width: 20%;
     border-radius: 5px;
     overflow: hidden;
     cursor: pointer;

@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 
-export const ButtonFilter = ({ data, onClick, active,  }) => {
-
+export const ButtonFilter = ({ data, onClick, active }) => {
     return (
         <>
             <button

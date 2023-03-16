@@ -1,25 +1,18 @@
 import React, { useState } from 'react'
 import '../../styles/Header.css'
-import { ButtonFilter } from '../ButtonFilter/ButtonFilter'
 
-export const Header = () => {
-    const [search, setSearch] = useState('')
-
-    const handleChange = (e) => {
-        const value = e.target.value;
-        setSearch(value)
-    }
-
+export const Header = ({ search, handleChange, buttonSearch, handleSubmit }) => {
     return (
         <>
-            <section className='header'>
+            <header className='header'>
                 <img className='header-img' src="https://images.nasa.gov/images/landing_bg..jpg" alt="" />
                 <div className="header-elements">
                     <span className="header-link">NASA Image and <br /> Video Library</span>
                     <img src="https://images.nasa.gov/images/nasa_logo-large.png?as=webp" alt="" />
                 </div>
-                <div className="header-search">
-                    <input 
+                <form onSubmit={handleSubmit} className="header-search">
+                    <input
+                        autoFocus
                         type="text"
                         value={search}
                         onChange={handleChange}
@@ -30,8 +23,11 @@ export const Header = () => {
                         <i className='header-invalid'></i>
                         <i className='header-search-button'></i>
                     </div>
+                </form>
+                <div className="header-btn">
+                    {buttonSearch}
                 </div>
-            </section>
+            </header>
         </>
     )
 }

@@ -1,13 +1,14 @@
-import { ButtonFiltersContainer } from './Containers/ButtonFiltersContainer/ButtonFiltersContainer'
-import { Header } from './components/Header/Header'
-import { GaleryContainer } from './Containers/GaleryContainer/GaleryContainer'
+import { HeaderContainer } from './Containers/HeaderContainer/HeaderContainer'
+import { GalleryItemDetail } from './Containers/GalleryItemDetail/GalleryItemDetail'
+import { Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
     <>
-      <Header />
-      <ButtonFiltersContainer />
-      <GaleryContainer />
+      <Routes>
+        <Route path='/' element={<HeaderContainer />} />
+        <Route path='/gallery' element={<GalleryItemDetail /> } />
+      </Routes>
     </>
   )
 }
