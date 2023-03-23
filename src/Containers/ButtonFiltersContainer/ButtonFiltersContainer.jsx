@@ -3,7 +3,7 @@ import { GaleryImg } from '../../components/GaleryImg/GaleryImg'
 import { buttonFiltersData } from '../../const/const'
 import '../../styles/ButtonFiltersContainer.css'
 
-export const ButtonFiltersContainer = ({ gallery, handleClick, isLoading, selecteClass, showPopular }) => {
+export const ButtonFiltersContainer = ({ handleClick, selecteClass }) => {
     return (
         <>
             {buttonFiltersData.map((button, index) => {
@@ -16,11 +16,7 @@ export const ButtonFiltersContainer = ({ gallery, handleClick, isLoading, select
                         onClick={() => handleClick(index)}
                     />
                 )
-            })}
-            <GaleryImg
-                gallery={gallery}
-                isLoading={isLoading}
-            />
+            })}            
         </>
     )
 }

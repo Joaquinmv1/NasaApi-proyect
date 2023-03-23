@@ -9,11 +9,9 @@ export const useFetch = (url) => {
             const request = await fetch(url);
             const response = await request.json();
             setData(response.collection.items);
+            setIsLoading(false);
         } catch (error) {
             console.log(error);
-        }
-        finally {
-            setIsLoading(false);
         }
     }
 
