@@ -13,6 +13,24 @@
     cursor: pointer;
 }
 
+@media screen and (max-width:1000px ) {
+    .galery-items{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width:825px ) {
+    .galery-items{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:567px ) {
+    .galery-items{
+        width: 100%;
+    }
+}
+
 .galery-items {
     box-shadow: 0px 0px 10px rgba(255, 58, 3, 0.3);
     object-fit: cover;

@@ -1,6 +1,7 @@
 .footer{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     align-items: center;
     margin-block: 2.5rem;
 }

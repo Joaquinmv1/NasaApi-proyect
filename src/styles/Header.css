@@ -25,6 +25,7 @@
 }
 
 .header-link {
+    width: 100%;
     font-size: 1.1rem;
 }
 
@@ -34,21 +35,12 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    
+
     margin: auto 0;
     transform: translate(-50%, -50%);
     text-align: center;
 }
 
-@media screen and (max-width: 1350px) {
-    /* .header-search {
-        width: 100%;
-    } */
-     
-    /* .header-search-input{
-        width: 1000px;
-    } */
-}
 
 .header-search-input {
     position: relative;
@@ -58,8 +50,50 @@
     border: 2px solid #15418c;
     background-color: #1c1f26;
     color: #fff;
-    font-size: 33px;
+    font-size: 1.5rem;
     box-shadow: 0 0 8px #81aefb;
+}
+
+@media screen and (max-width:1350px) {
+    .header-search-input {
+        min-width: 1000px;
+    }
+}
+
+@media screen and (max-width:1021px) {
+    .header-search-input {
+        min-width: 850px;
+    }
+}
+
+@media screen and (max-width:880px) {
+    .header-search-input {
+        min-width: 700px;
+    }
+
+    .header-link{
+        display: none;
+    }
+}
+
+@media screen and (max-width:730px) {
+    .header{
+        display: flex;
+    }
+    .header-search-input {
+        min-width: 600px;
+        height: 10px;
+    }
+
+    .desactivated{
+        display: none;
+    }
+}
+
+@media screen and (max-width:630px) {
+    .header-search-input {
+        min-width: 100%;
+    }
 }
 
 .header-search-input:focus {
@@ -82,6 +116,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    font-size: 1rem;
 }
 
 .header-invalid {
@@ -125,6 +160,8 @@
     left: 20%;
 }
 
+@media screen and (max-width: 765px) {}
+
 .header-btn button {
     border: none;
     background-color: #15418c;
@@ -137,7 +174,7 @@
     box-shadow: 0 0 8px #81aefb;
 }
 
-.back-to-home-container{
+.back-to-home-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,7 +182,7 @@
     margin-block: 1.5rem;
 }
 
-.btn-backToHome{
+.btn-backToHome {
     background-color: #15418c;
     border: none;
     padding: 1rem 1.5rem;
@@ -155,7 +192,7 @@
     font-weight: bold;
 }
 
-.no-found{
+.no-found {
     color: #fff;
     text-align: center;
     font-weight: bold;

@@ -9,12 +9,3 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@media screen and (max-width: 1300px) {
-  /* .header-search {
-      width: 100%;
-  } */
-   
-  .header-search-input{
-      width: 100%;
-  }
-}
