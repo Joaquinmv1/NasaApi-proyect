@@ -1,8 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import ClipLoader from "react-spinners/ClipLoader";
-import '../../styles/Header.css'
 
-export const GaleryImg = ({ gallery, onImageClick, reset, showBtn, result }) => {
+export const GaleryImg = ({ gallery, onImageClick, reset, showBtn, result, isLoading }) => {
     return (
         <>
             <div className="back-to-home-container">
@@ -10,15 +10,16 @@ export const GaleryImg = ({ gallery, onImageClick, reset, showBtn, result }) => 
                 {showBtn && <button onClick={reset} className='btn-backToHome'>Volver al Inicio</button>}
             </div>
             <div className="galery-container">
-                {
+                {isLoading ? <ClipLoader />  :
                     gallery.map((item) => (
-                        <img
-                            className='galery-items'
-                            key={item.data[0].nasa_id}
-                            src={item.links[0].href}
-                            alt={item.data[0].title}
-                            onClick={onImageClick}
-                        />
+                        <Link className='galery-link' key={item.data[0].nasa_id} to={`/gallery/${item.data[0].nasa_id}`}>
+                            <img
+                                className='galery-items'
+                                src={item.links[0].href}
+                                alt={item.data[0].title}
+                                onClick={onImageClick}
+                            />
+                        </Link>
                     )
                     )}
             </div>

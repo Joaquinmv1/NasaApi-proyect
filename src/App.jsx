@@ -1,22 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { HeaderContainer } from './Containers/HeaderContainer/HeaderContainer'
 import { Loader } from './components/Loader/Loader';
+import {Routes, Route} from 'react-router-dom'
+import { GalleryDetailContainer } from './Containers/GalleryDetailContainer/GalleryDetailContainer';
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true)
-
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false)
-    }, 1000)
-  }, [])
-
   return (
     <>
-      {isLoading
-        ? <Loader />
-        : <HeaderContainer />
-      }
+      <Routes>
+        <Route path='/' element={<HeaderContainer />} />
+        <Route path='/gallery/:id' element={<GalleryDetailContainer />} />
+      </Routes>
     </>
   )
 }

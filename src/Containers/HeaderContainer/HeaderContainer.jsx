@@ -15,7 +15,7 @@ export const HeaderContainer = () => {
   const [showPopular, setShowPopular] = useState(false);
   const [showBtn, setShowBtn] = useState(false);
 
-  const selection = showPopular ? 'black hole' : ""
+  const selection = showPopular ? 'galaxy' : ""
   let url = `https://images-api.nasa.gov/search?q=${result}${selection}&media_type=image`;
 
   const { data, isLoading } = useFetch(url);
@@ -28,6 +28,7 @@ export const HeaderContainer = () => {
   const handleSubmit = (e, search) => {
     e.preventDefault()
     setResult(search)
+    setShowPopular(false)
     setSearch('')
     setShowBtn(true)
   }

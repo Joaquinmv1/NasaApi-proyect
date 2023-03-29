@@ -6,11 +6,16 @@
     gap: 20px;
 }
 
+.galery-link{
+   display: flex;
+}
+
 .galery-items {
-    width: 20%;
     border-radius: 5px;
     overflow: hidden;
     cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(255, 58, 3, 0.3);
+    object-fit: cover;
 }
 
 @media screen and (max-width:1000px ) {
@@ -29,9 +34,4 @@
     .galery-items{
         width: 100%;
     }
-}
-
-.galery-items {
-    box-shadow: 0px 0px 10px rgba(255, 58, 3, 0.3);
-    object-fit: cover;
 }

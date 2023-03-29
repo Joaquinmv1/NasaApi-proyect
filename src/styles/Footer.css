@@ -1,5 +1,6 @@
 .footer{
     display: flex;
+    width: 100%;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
@@ -39,4 +40,20 @@
     padding: 0.5rem;
     font-size: 13px;
     font-size: 0.85rem;
+}
+
+@media screen and (max-width: 477px) {
+    .footer-li{
+        font-size: .7rem;
+        padding: 0.3rem;
+
+    }
+    .footer-left{
+        flex-direction: column;
+        /* margin-bottom: 1rem; */
+    }
+
+    .footer-left-img{
+     margin-bottom: 1rem;   
+    }
 }

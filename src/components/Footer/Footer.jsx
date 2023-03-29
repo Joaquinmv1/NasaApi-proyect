@@ -6,7 +6,7 @@ export const Footer = () => {
         <>
             <footer className='footer'>
                 <div className="footer-left">
-                    <img src="https://images.nasa.gov/images/nasa_logo-sm.png?as=webp" alt="" />
+                    <img className='footer-left-img' src="https://images.nasa.gov/images/nasa_logo-sm.png?as=webp" alt="" />
                     <div className="footer-description">
                         <p className='footer-p'>
                             <strong>National Aeronautics and Space Administration</strong>
