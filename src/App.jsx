@@ -1,7 +1,7 @@
 import React from 'react';
 import { HeaderContainer } from './Containers/HeaderContainer/HeaderContainer'
 import { Loader } from './components/Loader/Loader';
-import {Routes, Route} from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import { GalleryDetailContainer } from './Containers/GalleryDetailContainer/GalleryDetailContainer';
 
 function App() {

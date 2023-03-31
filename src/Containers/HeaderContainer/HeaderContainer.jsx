@@ -6,6 +6,8 @@ import { ButtonFiltersContainer } from '../ButtonFiltersContainer/ButtonFiltersC
 import { useFetch } from '../../hooks/useFetch'
 import { GaleryImg } from '../../components/GaleryImg/GaleryImg'
 import { Footer } from '../../components/Footer/Footer'
+import { Loader } from '../../components/Loader/Loader'
+import ClipLoader from 'react-spinners/ClipLoader'
 
 export const HeaderContainer = () => {
   const [search, setSearch] = useState('')
@@ -14,6 +16,7 @@ export const HeaderContainer = () => {
   const [gallery, setGallery] = useState([])
   const [showPopular, setShowPopular] = useState(false);
   const [showBtn, setShowBtn] = useState(false);
+  const [showResults, setShowResults] = useState(false);
 
   const selection = showPopular ? 'galaxy' : ""
   let url = `https://images-api.nasa.gov/search?q=${result}${selection}&media_type=image`;
@@ -31,6 +34,7 @@ export const HeaderContainer = () => {
     setShowPopular(false)
     setSearch('')
     setShowBtn(true)
+    setShowResults(true)
   }
 
   const handleChange = (e) => {
@@ -58,6 +62,7 @@ export const HeaderContainer = () => {
   return (
     <>
       <Header
+        gallery={gallery}
         search={search}
         handleChange={handleChange}
         buttonSearch={buttonSearch}
@@ -78,6 +83,7 @@ export const HeaderContainer = () => {
         reset={reset}
         showBtn={showBtn}
         result={result}
+        showResults={showResults}
       />
 
       <Footer />
