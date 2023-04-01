@@ -61,32 +61,34 @@ export const HeaderContainer = () => {
 
   return (
     <>
-      <Header
-        gallery={gallery}
-        search={search}
-        handleChange={handleChange}
-        buttonSearch={buttonSearch}
-        handleSubmit={handleSubmit}
-        reset={reset}
-      />
-
-      {!showBtn &&
-        <ButtonFiltersContainer
-          handleClick={handleClick}
-          selecteClass={selecteClass}
-        />
+      {gallery.length !== 0 &&
+        <>
+          <Header
+            gallery={gallery}
+            search={search}
+            handleChange={handleChange}
+            buttonSearch={buttonSearch}
+            handleSubmit={handleSubmit}
+            reset={reset}
+          />
+          {
+            !showBtn &&
+            <ButtonFiltersContainer
+              handleClick={handleClick}
+              selecteClass={selecteClass}
+            />
+          }
+          <GaleryImg
+            gallery={gallery}
+            isLoading={isLoading}
+            reset={reset}
+            showBtn={showBtn}
+            result={result}
+            showResults={showResults}
+          />
+          <Footer />
+        </>
       }
-
-      <GaleryImg
-        gallery={gallery}
-        isLoading={isLoading}
-        reset={reset}
-        showBtn={showBtn}
-        result={result}
-        showResults={showResults}
-      />
-
-      <Footer />
     </>
   )
 }

@@ -21,7 +21,9 @@ export const GalleryDetailContainer = () => {
   return (
     <>
       <div className="gallery-detail-header">
-        <img className="gallery-detail-background" src="https://images.nasa.gov/images/landing_bg..jpg" alt="" />
+        <img className="gallery-detail-background" src="https://images.nasa.gov/images/global-header_bg..png" alt="" />
+        {/* <span className="gallery-header-link">NASA Image and <br /> Video Library</span>
+        <img src="https://images.nasa.gov/images/nasa_logo-large.png?as=webp" alt="" /> */}
       </div>
       <Link to='/' className='gallery-link' >Home - <span>{id}</span></Link>
       <div className="gallery-detail-container">
