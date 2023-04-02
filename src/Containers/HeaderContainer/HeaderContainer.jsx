@@ -61,7 +61,7 @@ export const HeaderContainer = () => {
 
   return (
     <>
-      {gallery.length !== 0 &&
+      {gallery.length !== 0 ?
         <>
           <Header
             gallery={gallery}
@@ -88,6 +88,8 @@ export const HeaderContainer = () => {
           />
           <Footer />
         </>
+        :
+        <Loader />
       }
     </>
   )

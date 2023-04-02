@@ -1,6 +1,6 @@
 .footer {
   display: flex;
-  width: 100%;
+  /* width: 100%; */
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
@@ -9,6 +9,7 @@
 
 .footer-left {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -33,6 +34,7 @@
 .footer-ul {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .footer-li {
@@ -51,10 +53,19 @@
 
   .footer-left {
     flex-direction: column;
-    /* margin-bottom: 1rem; */
   }
 
   .footer-left-img {
     margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 393px){
+  .footer-p {
+    text-align: center;
+  }
+
+  .footer{
+    justify-content: center;
   }
 }

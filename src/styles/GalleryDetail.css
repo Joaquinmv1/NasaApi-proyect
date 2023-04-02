@@ -1,17 +1,36 @@
-.gallery-detail-container{
+.gallery-detail-header {
+  position: relative;
+  background-image: url('https://images.nasa.gov/images/global-header_bg..png');
+  min-height: 15vh;
+}
+
+.gallery-container-navbar {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 20%;
+  left: 40%;
+}
+
+.gallery-detail-navbar img {
+  cursor: pointer;
+}
+
+.gallery-header-link {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ccc;
+}
+
+.gallery-detail-main {
   display: flex;
   justify-content: center;
 }
 
-.gallery-detail-background {
-  width: 100%;
-  max-height: 20vh;
-  position: relative;
-  /* object-fit: cover; */
-}
-
 .gallery-detail-container {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
   color: #fff;
 }
 
@@ -22,16 +41,27 @@
 }
 
 .gallery-left {
-  display: flex;
-  justify-content: center;
   margin-right: 1rem;
-  /* width: 50%; */
+}
+
+.gallery-link-container {
+  text-align: center;
+  margin: 1rem;
 }
 
 .gallery-link {
-  font-size: .8rem;
+  font-size: 1rem;
   text-decoration: none;
   padding: 5rem;
+  font-size: .95rem;
+  text-align: end;
+}
+
+.gallery-link::before {
+  content: 'Home > estas viendo:  ';
+  font-size: 1rem;
+  color: #007bff;
+  font-weight: bold;
 }
 
 .gallery-link span {
@@ -39,7 +69,7 @@
 }
 
 .gallery-right {
-  width:40%;
+  width: 40%;
 }
 
 .gallery-rigth-button {
@@ -48,7 +78,7 @@
   background-color: #15418c;
   color: #fff;
   padding: 10px 16px;
-  width: 15%;
+  width: 20%;
   justify-content: center;
   text-transform: uppercase;
   font-weight: bold;
@@ -125,24 +155,124 @@
   margin-top: .3rem;
 }
 
-@media screen and (max-width:1330px) {
-  .gallery-detail-container {
-    margin: 0 auto;
+@media screen and (max-width:1311px) {
+  .gallery-container-navbar{
+    left: 35%;
+  }
+  .gallery-left{
+    /* width: 100%; */
+  }
+}
+
+@media screen and (max-width:1109px) {
+  .gallery-container-navbar{
+    left: 25%;
+  }
+
+  .gallery-detail-main{
     flex-direction: column;
-    width: 60%;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .gallery-rigth-button {
+    width: 100%;
   }
 
   .gallery-right{
     width: 100%;
   }
+}
 
-  .gallery-rigth-button{
-    width: 30%;
-    margin-top:1rem ;
+@media screen and (max-width:833px){
+  .gallery-container-navbar{
+    left: 20%;
+  }
+  .gallery-header-link{
+    display: none;
+  }
+}
+
+@media screen and (max-width:633px){
+  .gallery-container-navbar{
+    flex-direction: column;
+  }
+  .gallery-container-navbar{
+    left: 15%;
   }
 
-
-  .gallery-right-desc{
+  .gallery-left-share{
+    flex-direction: column;
+  }
+  .btn-share{
     width: 100%;
   }
+  .gallery-icons {
+    display: flex;
+    justify-content: flex-start;
+    /* text-align: center; */
+  }
+}
+
+@media screen and (max-width:374px){
+  .gallery-detail-main{
+    width: 90%;
+  }
+  .gallery-container-navbar{
+    top: 5%;
+  }
+}
+
+.gallery-left-share {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-content-share {
+  border: 1px solid #000000;
+}
+
+.btn-share {
+  display: flex;
+  align-items: center;
+
+  background-color: #3f424c;
+  border: none;
+  color: #fff;
+  padding: 8px 12px 5px 12px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-share span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-left: .3rem;
+}
+
+.gallery-share-socials {
+  display: flex;
+  align-items: center;
+}
+
+.gallery-share-socials img {
+  width: 30px;
+}
+
+.gallery-share-socials h3 {
+  font-weight: bold;
+  font-size: .85rem;
+}
+
+.gallery-icons ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.gallery-icons li {
+  margin-inline: .3rem;
+  cursor: pointer;
 }
