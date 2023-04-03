@@ -1,201 +1,215 @@
 .header {
-    position: relative;
-    width: 100%;
-    padding: 2px 0 0;
-    background-color: #000000;
+  position: relative;
+  width: 100%;
+  padding: 2px 0 0;
+  background-color: #000000;
 }
 
 .header-img {
-    object-fit: cover;
-    width: 100%;
-    max-height: 450px;
+  object-fit: cover;
+  width: 100%;
+  max-height: 450px;
 }
 
-.galery-link{
-    width: 20%;
+.galery-link {
+  width: 20%;
 }
 
 .header-elements {
-    display: flex;
-    align-items: center;
-    margin: 2rem;
+  display: flex;
+  align-items: center;
+  margin: 2rem;
 
-    position: absolute;
-    top: 10%;
-    left: 70%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 10%;
+  left: 70%;
+  transform: translate(-50%, -50%);
 
-    color: #fff;
+  color: #fff;
 }
 
 .header-link {
-    width: 100%;
-    font-size: 1.1rem;
+  width: 100%;
+  font-size: 1.1rem;
 }
 
 .header-search {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
 
-    margin: auto 0;
-    transform: translate(-50%, -50%);
-    text-align: center;
+  margin: auto 0;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .header-search-input {
-    position: relative;
-    padding: 2rem;
-    min-width: 1300px;
-    height: 80px;
-    border: 2px solid #15418c;
-    background-color: #1c1f26;
-    color: #fff;
-    font-size: 1.5rem;
-    box-shadow: 0 0 8px #81aefb;
+  position: relative;
+  padding: 2rem;
+  min-width: 1300px;
+  height: 80px;
+  border: 2px solid #15418c;
+  background-color: #1c1f26;
+  color: #fff;
+  font-size: 1.5rem;
+  box-shadow: 0 0 8px #81aefb;
 }
 
 @media screen and (max-width:1350px) {
-    .header-search-input {
-        min-width: 1000px;
-    }
+  .header-search-input {
+    min-width: 1000px;
+  }
 }
 
 @media screen and (max-width:1021px) {
-    .header-search-input {
-        min-width: 850px;
-    }
+  .header-search-input {
+    min-width: 850px;
+  }
 }
 
 @media screen and (max-width:880px) {
-    .header-search-input {
-        min-width: 700px;
-    }
+  .header-search-input {
+    min-width: 700px;
+  }
 
-    .header-link{
-        display: none;
-    }
+  .header-link {
+    display: none;
+  }
 }
 
 @media screen and (max-width:730px) {
-    .header{
-        display: flex;
-    }
-    .header-search-input {
-        min-width: 600px;
-        height: 10px;
-    }
+  .header {
+    display: flex;
+  }
 
-    .desactivated{
-        display: none;
-    }
+  .header-search-input {
+    min-width: 600px;
+    height: 10px;
+  }
+
+  .desactivated {
+    display: none;
+  }
 }
 
 @media screen and (max-width:630px) {
-    .header-search-input {
-        min-width: 100%;
-    }
+  .header-search-input {
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width:390px) {
+  .header-search-input {
+    width: 100%;
+  }
 }
 
 .header-search-input:focus {
-    box-shadow: 0 0 5px #00a4e4;
-    border: 2px solid #15418c;
+  box-shadow: 0 0 5px #00a4e4;
+  border: 2px solid #15418c;
 }
 
 .header-search-input {
-    color: #fff;
+  color: #fff;
 }
 
 ::placeholder {
-    color: #fff;
+  color: #fff;
 }
 
 .header-search-elements {
-    position: absolute;
-    right: 3px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 1rem;
+  position: absolute;
+  right: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1rem;
 }
 
 .header-invalid {
-    background: url(https://images.nasa.gov/images/error-icon-lg..png) no-repeat;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 30%;
-    right: inherit;
+  background: url(https://images.nasa.gov/images/error-icon-lg..png) no-repeat;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 30%;
+  right: inherit;
 }
 
 .header-search-button {
-    padding: 1.5rem;
-    border: none;
-    cursor: pointer;
-    width: 60px;
-    height: 80px;
-    background: url(https://images.nasa.gov/images/search_icon-large..png) no-repeat center #15418c;
+  padding: 1.5rem;
+  border: none;
+  cursor: pointer;
+  width: 60px;
+  height: 80px;
+  background: url(https://images.nasa.gov/images/search_icon-large..png) no-repeat center #15418c;
 }
 
 .btn-filter {
-    border: none;
-    text-decoration: underline;
-    background-color: transparent;
-    margin: 0 1.5rem 0 2rem;
-    color: #fff;
-    font-size: 1.45rem;
-    cursor: pointer;
+  border: none;
+  text-decoration: underline;
+  background-color: transparent;
+  margin: 0 1.5rem 0 2rem;
+  color: #fff;
+  font-size: 1.45rem;
+  cursor: pointer;
 }
 
 .active {
-    background: url("https://images.nasa.gov/images/down-arrow_lavender-large..png") no-repeat 95% center #000000;
-    padding: 15px 40px 15px 30px;
-    text-decoration: none;
-    transition: all 0.3s linear;
+  background: url("https://images.nasa.gov/images/down-arrow_lavender-large..png") no-repeat 95% center #000000;
+  padding: 15px 40px 15px 30px;
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+
+@media screen and (max-width:508px) {
+  .btn-filter{
+    width: 80%;
+    margin-block:1rem ;
+  }
 }
 
 .header-btn {
-    position: absolute;
-    top: 60%;
-    left: 20%;
+  position: absolute;
+  top: 60%;
+  left: 20%;
 }
 
 .header-btn button {
-    border: none;
-    background-color: #15418c;
-    color: #fff;
-    padding: .5rem 1.5rem;
-    margin: 0 .5rem;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1rem;
-    box-shadow: 0 0 8px #81aefb;
+  border: none;
+  background-color: #15418c;
+  color: #fff;
+  padding: .5rem 1.5rem;
+  margin: 0 .5rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 0 8px #81aefb;
 }
 
 .back-to-home-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
-    margin-block: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  margin-block: 1.5rem;
 }
 
 .btn-backToHome {
-    background-color: #15418c;
-    border: none;
-    padding: 1rem 1.5rem;
-    cursor: pointer;
-    color: #fff;
-    margin: 1rem;
-    font-weight: bold;
+  background-color: #15418c;
+  border: none;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  color: #fff;
+  margin: 1rem;
+  font-weight: bold;
 }
 
 .no-found {
-    color: #fff;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
 }

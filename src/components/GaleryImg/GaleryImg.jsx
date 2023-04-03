@@ -6,7 +6,7 @@ export const GaleryImg = ({ gallery, onImageClick, reset, showBtn, result, isLoa
   return (
     <>
       <div className="back-to-home-container">
-        {gallery.length === 0 && showResults  && <p className='no-found'>No se encontro ningun resultado con {result}</p>}
+        {gallery.length === 0 && showResults && <p className='no-found'>No se encontro ningun resultado con {result}</p>}
         {showBtn && <button onClick={reset} className='btn-backToHome'>Volver al Inicio</button>}
       </div>
       <div className="galery-container">
