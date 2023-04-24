@@ -60,7 +60,7 @@ export const GalleryDetail = ({ id, image }) => {
               Center: <span>{image.data[0].center}</span>
             </div>
             <div className="gallery-right-keywords">
-              Keywords: <span>{image.data[0].keywords}</span>
+              Keywords: <span>{image.data[0]?.keywords}</span>
             </div>
           </div>
         </div>

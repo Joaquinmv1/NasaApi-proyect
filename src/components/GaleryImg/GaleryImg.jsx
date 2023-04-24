@@ -12,7 +12,7 @@ export const GaleryImg = ({ gallery, onImageClick, reset, showBtn, result, isLoa
       <div className="galery-container">
         {
           isLoading ? <ClipLoader /> :
-            gallery.map((item) => (
+            gallery?.map((item) => (
               <Link className='galery-link' key={item.data[0].nasa_id} to={`/gallery/${item.data[0].nasa_id}`}>
                 <img
                   className='galery-items'

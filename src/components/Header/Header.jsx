@@ -1,7 +1,8 @@
 import React from 'react'
 import '../../styles/Header.css'
+import { btnSearch } from '../../const/const'
 
-export const Header = ({ gallery, search, handleChange, buttonSearch, handleSubmit, reset }) => {
+export const Header = ({ gallery, search, handleChange, handleSubmit, reset }) => {
   return (
     <>
       <header className='header'>
@@ -29,7 +30,9 @@ export const Header = ({ gallery, search, handleChange, buttonSearch, handleSubm
         {
           gallery.length !== 0 &&
           <div className="header-btn desactivated">
-            {buttonSearch}
+            {btnSearch.map((btn) => {
+              return <button key={btn.title}>{btn.title}</button>
+            })}
           </div>
         }
       </header>

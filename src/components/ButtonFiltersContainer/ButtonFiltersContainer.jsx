@@ -1,6 +1,6 @@
-import { ButtonFilter } from '../../components/ButtonFilter/ButtonFilter'
-import { GaleryImg } from '../../components/GaleryImg/GaleryImg'
+import { ButtonFilter } from '../ButtonFilter/ButtonFilter'
 import { buttonFiltersData } from '../../const/const'
+
 import '../../styles/ButtonFiltersContainer.css'
 
 export const ButtonFiltersContainer = ({ handleClick, selecteClass }) => {

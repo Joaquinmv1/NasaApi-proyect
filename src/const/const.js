@@ -1,10 +1,10 @@
 export const buttonFiltersData = [
-    { title: 'Newest Uploads' },
-    { title: 'Most Popular' }
+  { title: 'Newest Uploads' },
+  { title: 'Most Popular' }
 ];
 
 export const btnSearch = [
-    { title: 'Images' },
-    { title: 'Videos' },
-    { title: 'Audio' }
+  { title: 'Images' },
+  { title: 'Videos' },
+  { title: 'Audio' }
 ]
